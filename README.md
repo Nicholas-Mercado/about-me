@@ -7,7 +7,7 @@ __Author:__ Nicholas Mercado
 
 ### __Links and Resources__
 
-Any Links you used as reference
+[Tips on Using White Backgrounds in Website Design](https://designmodo.com/white-backgrounds/)
 
 
 ### __Reflections and Comments__
