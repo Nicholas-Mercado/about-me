@@ -39,4 +39,28 @@ h1{
   width: fit-content;
 }
 
+.lists {
+  /* border: 1px solid black; */
+  width: 500px;
+  text-align: left;
+  height: 300px; 
+  font-size: 1.5em;
+  margin-top: 20px;
+  /* margin-bottom: 50px; */
+  background-color: thistle;
+  box-shadow: 5px 10px #888888;
+  padding: 50px;
+  padding-bottom: 50px;
+  
+}
 
+.title {
+  font-size: 2em;
+  padding-bottom: 3%;
+  }
+
+.fixNum {
+    list-style: decimal;
+    margin-left: 2;
+  }
+ 
