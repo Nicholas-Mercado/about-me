@@ -9,6 +9,8 @@ __Author:__ Nicholas Mercado
 
 [Tips on Using White Backgrounds in Website Design](https://designmodo.com/white-backgrounds/)
 
+[CSS box-shadow Property](https://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
+
 
 ### __Reflections and Comments__
 
