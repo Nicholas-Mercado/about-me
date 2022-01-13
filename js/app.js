@@ -17,7 +17,8 @@ let wife = 'I am married to my wonderful wife!';
 questionOne();
 questionTwo();
 questionThree();
-questionFour(); 
+questionFour();
+questionFive();
 
 function questionOne(){
   let answerOne = prompt('Did I live in Florida?').toLowerCase();
@@ -79,18 +80,19 @@ function questionFour(){
   }
 }
 
-
-let answerFive = prompt('Am I married?').toLowerCase();
-if(answerFive === 'yes' || answerFive === 'y') {
-  //console.log(`${correct} ${wife}`);
-  userCorrect++;
-  alert(`${correct} ${wife}`);
-}else if(answerFive === 'no' || answerFive === 'n'){
-  //console.log(`${nope} ${wife}`);
-  alert(`${nope} ${wife}`);
-}else{
-  //console.log(noDirections);
-  alert(noDirections);
+function questionFive(){
+  let answerFive = prompt('Am I married?').toLowerCase();
+  if(answerFive === 'yes' || answerFive === 'y') {
+    //console.log(`${correct} ${wife}`);
+    userCorrect++;
+    alert(`${correct} ${wife}`);
+  }else if(answerFive === 'no' || answerFive === 'n'){
+    //console.log(`${nope} ${wife}`);
+    alert(`${nope} ${wife}`);
+  }else{
+    //console.log(noDirections);
+    alert(noDirections);
+  }
 }
 
 let tryCount = 4;
