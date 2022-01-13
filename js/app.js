@@ -151,7 +151,7 @@ function questionSeven(){
 }
 
 
-alert(`WoW!${user},Thanks for playing! \nYou got ${userCorrect} out of 7 correct answers!`)
+alert(`WoW!${user},Thanks for playing! \nYou got ${userCorrect} out of 7 correct answers!`);
 //console.log('correct answers' + userCorrect);
 // Write goodbye msg with correct answer count
 //alert(userCorrect);
