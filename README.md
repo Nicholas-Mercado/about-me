@@ -28,8 +28,27 @@ __Author:__ Nicholas Mercado
 
 Got help from a classmate Brady Camp who got help from a TA who showed us how to name a loop and break it. 
 
-line 111: circle: while(tryCount2){
+circle: while(tryCount2){ - on question seven
 
 ### __Reflections and Comments__
 
 Enjoyed creating this project. Today was a real struggle but once I understood my tools (for loops while loops etc..) it went a lot smoother. 
+
+
+
+# LAB - 04
+## About me
+Created a sixth and 7th question. 
+Sixth question is a number guessing game and the seventh is a list guessing game.
+
+__Author:__ Nicholas Mercado
+__Collaboration:__ Lauren Murphy - Refactored code by putting all questions in there own functions.
+
+
+### __Links and Resources__
+
+
+
+### __Reflections and Comments__
+
+Enjoyed creating this project. Today felt create working with Alan and Lauren. 
