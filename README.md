@@ -26,7 +26,9 @@ __Author:__ Nicholas Mercado
 
 ### __Links and Resources__
 
+Got help from a classmate Brady Camp who got help from a TA who showed us how to name a loop and break it. 
 
+line 111: circle: while(tryCount2){
 
 ### __Reflections and Comments__
 
