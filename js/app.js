@@ -20,6 +20,7 @@ questionThree();
 questionFour();
 questionFive();
 questionSix();
+questionSeven();
 
 function questionOne(){
   let answerOne = prompt('Did I live in Florida?').toLowerCase();
@@ -129,24 +130,26 @@ let favMovies = 'Memento, Grand Hotel Budapest, Princess Mononoke , Your Name, S
 let topMovies = ['memento','grand hotel budapest','princess mononoke','your name','spirited away','lord of the rings','howl\'s moving castle','the matrix','enter the dragon','snatch'];
 
 let tryCount2 = 6;
-
-circle: while(tryCount2){
-  tryCount2--;
-  let answerSeven = prompt('Try to guess one of my top ten favorite movies!\n little hint, I love me some anime and fantasy').toLowerCase();
-  //console.log(answerSeven);
-  for(let i = 0; i < topMovies.length; i++){
-    //console.log('array' + i);
-    if(answerSeven === topMovies[i]){
-      alert(`Thats right! Here are a list of all my favorite movies:\n${favMovies}`);
-      userCorrect++;
-      break circle;
+function questionSeven(){
+  circle: while(tryCount2){
+    tryCount2--;
+    let answerSeven = prompt('Try to guess one of my top ten favorite movies!\n little hint, I love me some anime and fantasy').toLowerCase();
+    //console.log(answerSeven);
+    for(let i = 0; i < topMovies.length; i++){
+      //console.log('array' + i);
+      if(answerSeven === topMovies[i]){
+        alert(`Thats right! Here are a list of all my favorite movies:\n${favMovies}`);
+        userCorrect++;
+        break circle;
+      }
+    }
+    alert(`Sorry ${user} thats wrong`);
+    //console.log(tryCount2);
+    if(tryCount2 === 0) { alert(`Sorry ${user}, All out of tries!\n These are a list of my top ten movies \n ${favMovies}`);
     }
   }
-  alert(`Sorry ${user} thats wrong`);
-  //console.log(tryCount2);
-  if(tryCount2 === 0) { alert(`Sorry ${user}, All out of tries!\n These are a list of my top ten movies \n ${favMovies}`);
-  }
 }
+
 
 alert(`WoW!${user},Thanks for playing! \nYou got ${userCorrect} out of 7 correct answers!`)
 //console.log('correct answers' + userCorrect);
