@@ -14,7 +14,7 @@ let ucf = 'I went to the University of Central Florida \n UCF UCF UCF UCF UCF!';
 let scuba = 'I hate going deep under water! I was an electrician!';
 let wife = 'I am married to my wonderful wife!';
 
-let answerOne = prompt('Did I live in Florida?').toLocaleLowerCase();
+let answerOne = prompt('Did I live in Florida?').toLowerCase();
 if(answerOne === 'yes' || answerOne === 'y') {
   //console.log(`${correct} ${florida}`);
   userCorrect++;
@@ -27,7 +27,7 @@ if(answerOne === 'yes' || answerOne === 'y') {
   alert(noDirections);
 }
 
-let answerTwo = prompt('Was I a Cheesemaker?').toLocaleLowerCase();
+let answerTwo = prompt('Was I a Cheesemaker?').toLowerCase();
 if(answerTwo === 'yes' || answerTwo === 'y') {
   //console.log(`${correct} ${cheese}`);
   userCorrect++;
@@ -40,7 +40,7 @@ if(answerTwo === 'yes' || answerTwo === 'y') {
   alert(noDirections);
 }
 
-let answerThree = prompt('Did I go to the University of Washington?').toLocaleLowerCase();
+let answerThree = prompt('Did I go to the University of Washington?').toLowerCase();
 if(answerThree === 'no' || answerThree === 'n') {
   //console.log(`${correct} ${ucf}`);
   alert(`${correct} ${ucf}`);
@@ -53,7 +53,7 @@ if(answerThree === 'no' || answerThree === 'n') {
   alert(noDirections);
 }
 
-let answerFour = prompt('Was my Last Career as a Scuba Instructor?').toLocaleLowerCase();
+let answerFour = prompt('Was my Last Career as a Scuba Instructor?').toLowerCase();
 if(answerFour === 'no' || answerFour === 'n') {
   //console.log(`${correct} ${scuba}`);
   userCorrect++;
@@ -66,7 +66,7 @@ if(answerFour === 'no' || answerFour === 'n') {
   alert(noDirections);
 }
 
-let answerFive = prompt('Am I married?').toLocaleLowerCase();
+let answerFive = prompt('Am I married?').toLowerCase();
 if(answerFive === 'yes' || answerFive === 'y') {
   //console.log(`${correct} ${wife}`);
   userCorrect++;
@@ -77,7 +77,7 @@ if(answerFive === 'yes' || answerFive === 'y') {
 }else{
   //console.log(noDirections);
   alert(noDirections);
-} 
+}
 
 let tryCount = 4;
 let mango = 6;
@@ -104,28 +104,29 @@ while(tryCount){
 
 
 
-let topMovies = ['memento', 'grand hotel budapest', 'princess mononoke','your name','spirited away', 'lord of the rings','howl\'s moving castle','the matrix','enter the dragon','snatch'];
+let topMovies = ['memento','grand hotel budapest','princess mononoke','your name','spirited away','lord of the rings','howl\'s moving castle','the matrix','enter the dragon','snatch'];
 
 let tryCount2 = 6;
 
 circle: while(tryCount2){
-  let answerSeven = prompt('Try to guess one of my top ten favorite movies!\n little hint, I love me some anime ');
-  console.log(answerSeven);
+  tryCount2--;
+  let answerSeven = prompt('Try to guess one of my top ten favorite movies!\n little hint, I love me some anime and fantasy').toLowerCase();
+  //console.log(answerSeven);
   for(let i = 0; i < topMovies.length; i++){
-    console.log(i);
+    //console.log('array' + i);
     if(answerSeven === topMovies[i]){
       alert('right');
       userCorrect++;
-      tryCount2 = 1;
       break circle;
-    }else{
-      answerSeven = alert('Wrong answer!');break;
     }
   }
-  tryCount2--;
-  console.log(tryCount2);
-  if(tryCount2 === 0) {alert(`Sorry ${user}, All out of tries\n add list of movies`);}
+  alert(`Sorry ${user} thats wrong`);
+  //console.log(tryCount2);
+  if(tryCount2 === 0) { alert(`Sorry ${user}, All out of tries!\n These are a list of my top ten movies \n memento, grand hotel budapest, princess mononoke ,your name, spirited away, lord of the rings, howl\'s moving castle, the matrix, enter the dragon, snatch`);
+  }
 }
 
-console.log('correct answers' + userCorrect);
-alert(userCorrect);
+alert(`WoW!${user},Thanks for playing! \nYou got ${userCorrect} ot of 7 correct answers!`)
+//console.log('correct answers' + userCorrect);
+// Write goodbye msg with correct answer count
+//alert(userCorrect);
