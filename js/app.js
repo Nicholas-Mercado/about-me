@@ -13,6 +13,14 @@ let cheese =  'I was!! I pasteurized milk and everything!';
 let ucf = 'I went to the University of Central Florida \n UCF UCF UCF UCF UCF!';
 let scuba = 'I hate going deep under water! I was an electrician!';
 let wife = 'I am married to my wonderful wife!';
+let favMovies = 'Memento, Grand Hotel Budapest, Princess Mononoke , Your Name, Spirited Away, Lord of the Rings, Howl\'s Moving Castle, The Matrix, Enter the dragon, Snatch`';
+
+let topMovies = ['memento','grand hotel budapest','princess mononoke','your name','spirited away','lord of the rings','howl\'s moving castle','the matrix','enter the dragon','snatch'];
+let tryCount = 4;
+let mango = 6;
+let rMango = (`I have ${mango} mangos on my counter`);
+
+let tryCount2 = 6;
 
 questionOne();
 questionTwo();
@@ -98,9 +106,6 @@ function questionFive(){
 }
 
 
-let tryCount = 4;
-let mango = 6;
-let rMango = (`I have ${mango} mangos on my counter`);
 
 function questionSix(){
   while(tryCount){
@@ -125,11 +130,6 @@ function questionSix(){
 
 
 
-let favMovies = 'Memento, Grand Hotel Budapest, Princess Mononoke , Your Name, Spirited Away, Lord of the Rings, Howl\'s Moving Castle, The Matrix, Enter the dragon, Snatch`';
-
-let topMovies = ['memento','grand hotel budapest','princess mononoke','your name','spirited away','lord of the rings','howl\'s moving castle','the matrix','enter the dragon','snatch'];
-
-let tryCount2 = 6;
 function questionSeven(){
   circle: while(tryCount2){
     tryCount2--;
