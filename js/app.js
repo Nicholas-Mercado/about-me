@@ -4,7 +4,7 @@ let userCorrect = 0;
 
 let user = prompt('What is your name?');
 alert(`Welcome ${user} to my About Me page!`);
-alert(`${user} ! lets see how much you know about me \n Answer the following questions with a yes or a no`);
+alert(`${user} ! Lets see how much you know about me \n Answer the following questions with a yes or no`);
 let correct = (`Thats correct ${user}! `);
 let noDirections = 'Come on now, read the instructions \n answer yes or no!';
 let florida = 'I lived in Florida for almost a decade!';
@@ -83,7 +83,6 @@ let tryCount = 4;
 let mango = 6;
 let rMango = (`I have ${mango} mangos on my counter`);
 
-
 while(tryCount){
   let answerSix = prompt(`${user}, How many Mangos are on my counter right now??`);
   console.log(typeof(answerSix));
@@ -99,10 +98,11 @@ while(tryCount){
   tryCount--;
   console.log(tryCount);
   if(tryCount === 0) {alert(`Sorry ${user}, All out of tries\n${rMango}`);
-  }
+}
 }
 
 
+let favMovies = 'Memento, Grand Hotel Budapest, Princess Mononoke , Your Name, Spirited Away, Lord of the Rings, Howl\'s Moving Castle, The Matrix, Enter the dragon, Snatch`';
 
 let topMovies = ['memento','grand hotel budapest','princess mononoke','your name','spirited away','lord of the rings','howl\'s moving castle','the matrix','enter the dragon','snatch'];
 
@@ -115,14 +115,14 @@ circle: while(tryCount2){
   for(let i = 0; i < topMovies.length; i++){
     //console.log('array' + i);
     if(answerSeven === topMovies[i]){
-      alert('right');
+      alert(`Thats right! Here are a list of all my favorite movies:\n${favMovies}`);
       userCorrect++;
       break circle;
     }
   }
   alert(`Sorry ${user} thats wrong`);
   //console.log(tryCount2);
-  if(tryCount2 === 0) { alert(`Sorry ${user}, All out of tries!\n These are a list of my top ten movies \n memento, grand hotel budapest, princess mononoke ,your name, spirited away, lord of the rings, howl\'s moving castle, the matrix, enter the dragon, snatch`);
+  if(tryCount2 === 0) { alert(`Sorry ${user}, All out of tries!\n These are a list of my top ten movies \n ${favMovies}`);
   }
 }
 
