@@ -19,6 +19,7 @@ questionTwo();
 questionThree();
 questionFour();
 questionFive();
+questionSix();
 
 function questionOne(){
   let answerOne = prompt('Did I live in Florida?').toLowerCase();
@@ -95,27 +96,32 @@ function questionFive(){
   }
 }
 
+
 let tryCount = 4;
 let mango = 6;
 let rMango = (`I have ${mango} mangos on my counter`);
 
-while(tryCount){
-  let answerSix = prompt(`${user}, How many Mangos are on my counter right now??`);
-  console.log(typeof(answerSix));
-  if(parseInt(answerSix) === mango){
-    userCorrect++;
-    alert(`Great job ${user} you got it right! \n${rMango}`);break;
-  }
-  else if(answerSix > mango){
-    alert(`too high ${user} try again`);
-  }else {
-    alert(`too low ${user} try again`);
-  }
-  tryCount--;
-  //console.log(tryCount);
-  if(tryCount === 0) {alert(`Sorry ${user}, All out of tries\n${rMango}`);
+function questionSix(){
+  while(tryCount){
+    let answerSix = prompt(`${user}, How many Mangos are on my counter right now??`);
+    console.log(typeof(answerSix));
+    if(parseInt(answerSix) === mango){
+      userCorrect++;
+      alert(`Great job ${user} you got it right! \n${rMango}`);break;
+    }
+    else if(answerSix > mango){
+      alert(`too high ${user} try again`);
+    }else {
+      alert(`too low ${user} try again`);
+    }
+    tryCount--;
+    //console.log(tryCount);
+    if(tryCount === 0) {alert(`Sorry ${user}, All out of tries\n${rMango}`);
+    }
   }
 }
+
+
 
 
 let favMovies = 'Memento, Grand Hotel Budapest, Princess Mononoke , Your Name, Spirited Away, Lord of the Rings, Howl\'s Moving Castle, The Matrix, Enter the dragon, Snatch`';
