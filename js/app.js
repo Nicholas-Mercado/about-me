@@ -96,9 +96,9 @@ while(tryCount){
     alert(`too low ${user} try again`);
   }
   tryCount--;
-  console.log(tryCount);
+  //console.log(tryCount);
   if(tryCount === 0) {alert(`Sorry ${user}, All out of tries\n${rMango}`);
-}
+  }
 }
 
 
@@ -126,7 +126,7 @@ circle: while(tryCount2){
   }
 }
 
-alert(`WoW!${user},Thanks for playing! \nYou got ${userCorrect} ot of 7 correct answers!`)
+alert(`WoW!${user},Thanks for playing! \nYou got ${userCorrect} out of 7 correct answers!`)
 //console.log('correct answers' + userCorrect);
 // Write goodbye msg with correct answer count
 //alert(userCorrect);
