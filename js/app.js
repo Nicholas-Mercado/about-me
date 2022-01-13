@@ -15,6 +15,7 @@ let scuba = 'I hate going deep under water! I was an electrician!';
 let wife = 'I am married to my wonderful wife!';
 
 questionOne();
+questionTwo();
 
 function questionOne(){
   let answerOne = prompt('Did I live in Florida?').toLowerCase();
@@ -31,17 +32,19 @@ function questionOne(){
   }
 }
 
-let answerTwo = prompt('Was I a Cheesemaker?').toLowerCase();
-if(answerTwo === 'yes' || answerTwo === 'y') {
-  //console.log(`${correct} ${cheese}`);
-  userCorrect++;
-  alert(`${correct} ${cheese}`);
-}else if(answerTwo === 'no' || answerTwo === 'n'){
-  //console.log(`${nope} ${cheese}`);
-  alert(`${nope} ${cheese}`);
-}else{
-  //console.log(noDirections);
-  alert(noDirections);
+function questionTwo(){
+  let answerTwo = prompt('Was I a Cheesemaker?').toLowerCase();
+  if(answerTwo === 'yes' || answerTwo === 'y') {
+    //console.log(`${correct} ${cheese}`);
+    userCorrect++;
+    alert(`${correct} ${cheese}`);
+  }else if(answerTwo === 'no' || answerTwo === 'n'){
+    //console.log(`${nope} ${cheese}`);
+    alert(`${nope} ${cheese}`);
+  }else{
+    //console.log(noDirections);
+    alert(noDirections);
+  }
 }
 
 let answerThree = prompt('Did I go to the University of Washington?').toLowerCase();
