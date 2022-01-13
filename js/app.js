@@ -14,17 +14,21 @@ let ucf = 'I went to the University of Central Florida \n UCF UCF UCF UCF UCF!';
 let scuba = 'I hate going deep under water! I was an electrician!';
 let wife = 'I am married to my wonderful wife!';
 
-let answerOne = prompt('Did I live in Florida?').toLowerCase();
-if(answerOne === 'yes' || answerOne === 'y') {
-  //console.log(`${correct} ${florida}`);
-  userCorrect++;
-  alert(`${correct} ${florida}`);
-}else if(answerOne === 'no' || answerOne === 'n'){
-  //console.log(`${nope}${florida}`);
-  alert(`${nope}${florida}`);
-}else{
-  //console.log(noDirections);
-  alert(noDirections);
+questionOne();
+
+function questionOne(){
+  let answerOne = prompt('Did I live in Florida?').toLowerCase();
+  if(answerOne === 'yes' || answerOne === 'y') {
+    //console.log(`${correct} ${florida}`);
+    userCorrect++;
+    alert(`${correct} ${florida}`);
+  }else if(answerOne === 'no' || answerOne === 'n'){
+    //console.log(`${nope}${florida}`);
+    alert(`${nope}${florida}`);
+  }else{
+    //console.log(noDirections);
+    alert(noDirections);
+  }
 }
 
 let answerTwo = prompt('Was I a Cheesemaker?').toLowerCase();
