@@ -50,3 +50,18 @@ __Collaboration:__ Lauren Murphy - Refactored code by putting all questions in t
 ### __Reflections and Comments__
 
 Enjoyed creating this project. Today felt create working with Alan and Lauren.
+
+# LAB - 05
+
+## About me
+
+Spent some time cleaning up my code. Getting ride of commented out console.logs. 
+
+__Author:__ Nicholas Mercado <br>
+__Collaboration:__ Lauren Murphy - Refactored code by putting all questions in there own functions.
+
+### __Links and Resources__
+
+### __Reflections and Comments__
+
+Looking back at this project I am kind of shocked how much I learned in such a short time.
