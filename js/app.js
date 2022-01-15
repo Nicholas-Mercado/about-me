@@ -33,14 +33,11 @@ questionSeven();
 function questionOne(){
   let answerOne = prompt('Did I live in Florida?').toLowerCase();
   if(answerOne === 'yes' || answerOne === 'y') {
-    //console.log(`${correct} ${florida}`);
     userCorrect++;
     alert(`${correct} ${florida}`);
   }else if(answerOne === 'no' || answerOne === 'n'){
-    //console.log(`${nope}${florida}`);
     alert(`${nope}${florida}`);
   }else{
-    //console.log(noDirections);
     alert(noDirections);
   }
 }
@@ -48,14 +45,11 @@ function questionOne(){
 function questionTwo(){
   let answerTwo = prompt('Was I a Cheesemaker?').toLowerCase();
   if(answerTwo === 'yes' || answerTwo === 'y') {
-    //console.log(`${correct} ${cheese}`);
     userCorrect++;
     alert(`${correct} ${cheese}`);
   }else if(answerTwo === 'no' || answerTwo === 'n'){
-    //console.log(`${nope} ${cheese}`);
     alert(`${nope} ${cheese}`);
   }else{
-    //console.log(noDirections);
     alert(noDirections);
   }
 }
@@ -63,14 +57,11 @@ function questionTwo(){
 function questionThree(){
   let answerThree = prompt('Did I go to the University of Washington?').toLowerCase();
   if(answerThree === 'no' || answerThree === 'n') {
-    //console.log(`${correct} ${ucf}`);
     alert(`${correct} ${ucf}`);
     userCorrect++;
   }else if(answerThree === 'yes' || answerThree === 'y'){
-    //console.log(`${nope} ${ucf}`);
     alert(`${nope} ${ucf}`);
   }else{
-    //console.log(noDirections);
     alert(noDirections);
   }
 }
@@ -78,14 +69,11 @@ function questionThree(){
 function questionFour(){
   let answerFour = prompt('Was my Last Career as a Scuba Instructor?').toLowerCase();
   if(answerFour === 'no' || answerFour === 'n') {
-    //console.log(`${correct} ${scuba}`);
     userCorrect++;
     alert(`${correct} ${scuba}`);
   }else if(answerFour === 'yes' || answerFour === 'y'){
-    //console.log(`${nope} ${scuba}`);
     alert(`${nope} ${scuba}`);
   }else{
-    //console.log(noDirections);
     alert(noDirections);
   }
 }
@@ -93,14 +81,11 @@ function questionFour(){
 function questionFive(){
   let answerFive = prompt('Am I married?').toLowerCase();
   if(answerFive === 'yes' || answerFive === 'y') {
-    //console.log(`${correct} ${wife}`);
     userCorrect++;
     alert(`${correct} ${wife}`);
   }else if(answerFive === 'no' || answerFive === 'n'){
-    //console.log(`${nope} ${wife}`);
     alert(`${nope} ${wife}`);
   }else{
-    //console.log(noDirections);
     alert(noDirections);
   }
 }
@@ -121,7 +106,6 @@ function questionSix(){
       alert(`too low ${user} try again`);
     }
     tryCount--;
-    //console.log(tryCount);
     if(tryCount === 0) {alert(`Sorry ${user}, All out of tries\n${rMango}`);
     }
   }
@@ -134,9 +118,7 @@ function questionSeven(){
   circle: while(tryCount2){
     tryCount2--;
     let answerSeven = prompt('Try to guess one of my top ten favorite movies!\n little hint, I love me some anime and fantasy').toLowerCase();
-    //console.log(answerSeven);
     for(let i = 0; i < topMovies.length; i++){
-      //console.log('array' + i);
       if(answerSeven === topMovies[i]){
         alert(`Thats right! Here are a list of all my favorite movies:\n${favMovies}`);
         userCorrect++;
@@ -144,7 +126,6 @@ function questionSeven(){
       }
     }
     alert(`Sorry ${user} thats wrong`);
-    //console.log(tryCount2);
     if(tryCount2 === 0) { alert(`Sorry ${user}, All out of tries!\n These are a list of my top ten movies \n ${favMovies}`);
     }
   }
@@ -152,6 +133,3 @@ function questionSeven(){
 
 
 alert(`WoW!${user},Thanks for playing! \nYou got ${userCorrect} out of 7 correct answers!`);
-//console.log('correct answers' + userCorrect);
-// Write goodbye msg with correct answer count
-//alert(userCorrect);
